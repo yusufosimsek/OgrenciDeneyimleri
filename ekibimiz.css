@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(13, 38, 63, 0.66);
+    width: 10px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #13BDCB;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    background-color: aliceblue;
+    background-size: 100% 100%;
+
+}
+
+.container .navbar {
+    width: 100%;
+    height: 100px;
+    background-color:rgb(13, 38, 63);
+}
+
+.navbar .menubtn {
+    display: none;
+}
+
+.navbar .menubtn2 {
+    font-size: 2rem;
+    color: #f3f3f3;
+    float: right;
+    line-height: 80px;
+    margin-right: 2rem;
+    display: none;
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.navbar .logo img{
+    text-decoration: none;
+    font-size: 5px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: #13BDCB;
+    border-radius: 2px;
+}
+
+.baslik {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: larger;
+    color: rgb(13,38, 63);
+}
+
+.tanimlar p {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.genel-tanim {
+    margin: 50px;
+    padding: 40px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: large;
+}
+
+.gk-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+}
+
+.gky-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+}
+
+.yk-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 450px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.yk-tanim:hover {
+    width: 470px;
+    height: 220px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.koordinator-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.koordinator-tanim:hover {
+    width: 500px;
+    height: 250px;
+    font-size: 22px;
+    background-color: #13bccba2;
+}
+
+.dk-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.dk-tanim:hover {
+    width: 510px;
+    height: 260px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.arastirma-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 250px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.arastirma-tanim:hover {
+    width: 410px;
+    height: 260px;
+    font-size: 22px;
+    background-color: #13bccba2;
+}
+
+.saha-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.saha-tanim:hover {
+    width: 510px;
+    height: 260px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.veri-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.veri-tanim:hover {
+    width: 410px;
+    height: 210px;
+    font-size: 22px;
+    background-color: #13bccba2;
+}
+
+.edit-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 450px;
+    height: 250px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.edit-tanim:hover {
+    width: 460px;
+    height: 260px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.tasarim-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 250px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.tasarim-tanim:hover {
+    width: 410px;
+    height: 260px;
+    font-size: 22px;
+    background-color: #13bccba2;
+}
+
+.yazilim-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.yazilim-tanim:hover {
+    width: 410px;
+    height: 210px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.sm-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+.sm-tanim:hover {
+    width: 410px;
+    height: 210px;
+    font-size: 22px;
+    background-color: #13bccba2;
+}
+
+.hukuk-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.hukuk-tanim:hover {
+    width: 410px;
+    height: 210px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.ik-tanim {
+    margin-right: 650px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #13BDCB;
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.ik-tanim:hover {
+    width: 410px;
+    height: 210px;
+    font-size: 22px;
+    background-color: #13bccba2;
+}
+
+.egitim-tanim {
+    margin-right: 150px;
+    margin-left: 650px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 35px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(13, 38, 63);
+    color: #ffffff;
+    transition: width 30s height 30s;
+    transition: font-size 5s;
+    transition: background-color 5s;
+}
+
+.egitim-tanim:hover {
+    width: 410px;
+    height: 210px;
+    font-size: 22px;
+    background-color: rgba(13, 38, 63, 0.66);
+}
+
+.footer {
+    background-color: rgb(13, 38, 63);
+}
+
+.row .logo-a {
+    position: relative;
+    left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.col h4 {
+    font-size: 18px;
+    color: wheat;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: aqua;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.col ul li::not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col u li a:hover {
+    color: wheat;
+    padding-left: 8px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.col {
+    width: 25%;
+    padding: 10px 15px;
+    margin: 25px;
+    font-size: larger;
+}
+
+.col h4 {
+    font-size: 18px;
+    color: wheat;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: aqua;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.col ul li::not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col u li a:hover {
+    color: wheat;
+    padding-left: 8px;
+}
+
+.logo.a {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width:1150px){
+
+    .navbar .menubtn2{
+        display: initial;
+    }
+
+
+
+    ul {
+        position: fixed;
+        background-color: rgb(13, 38, 63);
+        width: 100%;
+        height: calc(100vh-80px);
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        left: -1000px;
+    }
+
+    .navbar ul li {
+        display: block;
+        min-width: 250;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .navbar ul li a {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .navbar .menubtn:checked ~ ul{
+        left: 0%;
+    }
+
+    .navbar .menubtn2:checked ~ ul {
+        left: 0%
+    }
+
+    .genel-tanim {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .gk-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .gky-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .yk-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .koordinator-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .dk-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .arastirma-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .saha-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .veri-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .edit-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .tasarim-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .yazilim-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .sm-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .hukuk-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .ik-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .egitim-tanim {
+        margin-right: 10px;
+        margin-left: 120px;
+        width: 400px;
+        height: 400px;
+    }
+
+ 
+
+
+
+
+
+
+
+}
